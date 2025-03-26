@@ -1,13 +1,24 @@
-import { ReactNode } from 'react';
+import Header from "../components/Header"
+import Navbar from "../components/Navbar"
+import Main from "../components/Main"
+import ProjectCart from "../components/ProjectCart"
+import Footer from "../components/Footer"
 
-type Props = {
-    children: ReactNode | ReactNode[]; 
-  };
-
-const LandingPage = ({ children }: Props) => {
+const LandingPage = () => {
   return (
     <div>
-      {children}
+        <Header>
+            <Navbar><p>Navbar here</p></Navbar>
+        </Header>
+        <Main>
+            <h1>Landing Page</h1>
+            <ProjectCart>
+                <p>Project Cart here</p>
+            </ProjectCart>
+        </Main>
+        <Footer>    
+            <p>Footer here</p>
+        </Footer>
     </div>
   )
 }
