@@ -1,12 +1,13 @@
-import { ReactNode } from 'react';
+import { ReactNode, MouseEventHandler } from 'react';
 
 type Props = {
     children: ReactNode | ReactNode[]; 
+    onClick?: MouseEventHandler<HTMLButtonElement>;
   };
 
-const Button = ({children} : Props) => {
+const Button = ({children, onClick} : Props) => {
   return (
-    <button>
+    <button onClick={onClick}>
       {children}
     </button>
   )
