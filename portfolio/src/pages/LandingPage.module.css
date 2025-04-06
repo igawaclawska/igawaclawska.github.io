@@ -13,9 +13,30 @@
   gap: 2.5rem;
   align-items: flex-start;
   text-align: left;
+  height: 100%;
 }
 
-@media (max-width: 768px) {
+.profileImg {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.highlightedText {
+  color: var(--primary-color-dark);
+  font-weight: 600;
+  font-family: 20px;
+}
+
+@media (max-width: 992px) {
+  .profileImg {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
   .grid {
     grid-template-columns: 1fr;
   }

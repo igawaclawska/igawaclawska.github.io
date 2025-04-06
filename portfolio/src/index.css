@@ -2,9 +2,10 @@
 
 :root {
   --primary-color: #ef7240;
+  --primary-color-dark: #d44911;
   --background-color: #fafafa;
   --text-color: #25282b;
-  --max-width: 80rem;
+  --max-width: 75rem;
   --padding-md: 4rem;
   --padding-sm: 2rem;
 }

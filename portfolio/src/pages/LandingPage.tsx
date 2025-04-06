@@ -25,7 +25,7 @@ const LandingPage = () => {
           <div className={styles.grid}>
             <div>
               <div>
-                <p>FRONTEND DEVELOPER</p>
+                <p className={styles.highlightedText}>FRONTEND DEVELOPER</p>
                 <h1>I develop accessible and intuitive digital experiences</h1>
               </div>
               <p>
@@ -39,12 +39,9 @@ const LandingPage = () => {
                 <Button>See Projects</Button>
               </div>
             </div>
-            <div>
-              <img
-                // alt=""
-                src="https://images.unsplash.com/photo-1612839298857-4f3a2b8c5d1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
-              />
-            </div>
+            {/* <div> */}
+            <img className={styles.profileImg} alt="" src="profile-photo.png" />
+            {/* </div> */}
           </div>
         </Section>
         <Section>
