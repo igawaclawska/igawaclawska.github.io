@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: var(--padding-sm);
+}
+
+.navContainer {
+  width: var(--max-width);
+  max-width: var(--max-width);
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  font-size: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

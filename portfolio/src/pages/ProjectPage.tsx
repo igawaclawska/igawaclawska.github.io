@@ -1,21 +1,23 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
+import Section from "../components/Section";
 import Footer from "../components/Footer";
 
 const ProjectPage = () => {
   return (
-    <div>
+    <>
+      <title>Project</title>
       <Header>
         <Navbar />
       </Header>
       <Main>
-        <h1>Landing Page</h1>
+        <Section>
+          <h1>Project Page</h1>
+        </Section>
       </Main>
-      <Footer>
-        <p>Footer here</p>
-      </Footer>
-    </div>
+      <Footer />
+    </>
   );
 };
 

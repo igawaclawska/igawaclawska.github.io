@@ -1,15 +1,14 @@
-import { ReactNode } from 'react';
+import styles from "./Footer.module.css";
 
-type Props = {
-    children: ReactNode | ReactNode[]; 
-  };
-
-const Footer = ({children} : Props) => {
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer>
-      {children}
+    <footer className={styles.footer}>
+      <div className={styles.content}>
+        <p>Iga Waclawska {currentYear}</p>
+      </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
