@@ -1,0 +1,38 @@
+.background {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  height: 30rem;
+}
+
+.background > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 0 1rem 1rem 0;
+  align-self: self-end;
+  aspect-ratio: 1/1;
+  height: auto;
+  height: 30rem;
+}
+
+@media (max-width: 768px) {
+  .background {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+    padding: 0 0 var(--padding-sm) 0;
+  }
+  .background > img {
+    height: auto;
+    width: 100%;
+    align-self: self-end;
+    aspect-ratio: 3/2;
+    border-radius: 1rem 1rem 0 0;
+    order: -1;
+  }
+}

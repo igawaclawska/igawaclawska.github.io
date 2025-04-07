@@ -26,21 +26,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 600;
-  color: var(--text-color);
-  text-decoration: inherit;
-}
-
-a:visited {
-  color: var(--text-color);
-}
-
-a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
-}
-
 body {
   margin: 0;
   display: flex;

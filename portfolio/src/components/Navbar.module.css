@@ -26,10 +26,22 @@
 }
 
 .link {
-  text-decoration: none;
-  color: #007bff;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: inherit;
 }
 
 .link:hover {
   text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.link:visited {
+  color: var(--text-color);
+}
+
+a {
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: inherit;
 }

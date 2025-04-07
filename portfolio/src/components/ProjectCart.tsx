@@ -1,15 +1,12 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
+import styles from "./ProjectCart.module.css";
 
 type Props = {
-    children: ReactNode | ReactNode[]; 
-  };
+  children: ReactNode | ReactNode[];
+};
 
-const ProjectCart = ({children} : Props) => {
-  return (
-    <div>
-      {children}
-    </div>
-  )
-}
+const ProjectCart = ({ children }: Props) => {
+  return <div className={styles.background}>{children}</div>;
+};
 
-export default ProjectCart
+export default ProjectCart;
