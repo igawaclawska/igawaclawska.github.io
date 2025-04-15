@@ -12,5 +12,12 @@
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 3rem;
+}
+
+@media (max-width: 992px) {
+  .section {
+    padding: 48px 16px;
+  }
 }

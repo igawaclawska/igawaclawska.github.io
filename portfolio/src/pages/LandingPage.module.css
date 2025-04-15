@@ -30,12 +30,52 @@
   font-family: 20px;
 }
 
+.heading {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 32px;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.subheadline {
+  font-size: 16px;
+  color: var(--text-color);
+  max-width: 768px;
+}
+
 @media (max-width: 992px) {
   .profileImg {
-    display: none;
+    width: 50%;
+  }
+
+  .grid > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    align-items: center;
+    text-align: center;
+    height: 100%;
   }
 }
 
+@media (max-width: 992px) {
+  .profileImg {
+    order: -1;
+    margin-top: -3rem;
+  }
+}
 @media (max-width: 992px) {
   .grid {
     grid-template-columns: 1fr;

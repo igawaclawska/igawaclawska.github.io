@@ -1,38 +1,122 @@
 .background {
+  font: unset;
+  cursor: pointer;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   border-radius: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  align-items: center;
+  align-items: start;
   height: 30rem;
+  transition: box-shadow 0.3s ease;
 }
 
-.background > img {
+.background:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+}
+
+.projectDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: flex-start;
+  text-align: left;
   height: 100%;
-  width: 100%;
-  object-fit: cover;
-  justify-self: center;
+  padding: var(--padding-sm);
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
   border-radius: 0 1rem 1rem 0;
-  align-self: self-end;
-  aspect-ratio: 1/1;
-  height: auto;
-  height: 30rem;
+}
+
+.projectImage {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.background:hover .projectImage {
+  transform: scale(1.1);
+}
+
+.cartHeading {
+  font-size: 24px;
+}
+
+.goToLink {
+  font-size: 16px;
+  color: var(--primary-color-dark);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  transition: color 0.3s ease;
+}
+
+.goToLink::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.goToLink:hover {
+  color: var(--primary-color);
+}
+
+.goToLink:hover::after {
+  animation: moveRightLeft 0.6s ease-in-out;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.technology {
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  border: solid 1px var(--primary-color);
+  background-color: rgb(255, 237, 225);
+  border-radius: 2rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+@keyframes moveRightLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0.25rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 768px) {
   .background {
     grid-template-columns: repeat(1, 1fr);
     height: auto;
-    padding: 0 0 var(--padding-sm) 0;
+    align-items: start;
+    gap: 0;
   }
-  .background > img {
-    height: auto;
-    width: 100%;
-    align-self: self-end;
-    aspect-ratio: 3/2;
-    border-radius: 1rem 1rem 0 0;
+
+  .imageContainer {
     order: -1;
+    border-radius: 1rem 1rem 0 0;
   }
 }

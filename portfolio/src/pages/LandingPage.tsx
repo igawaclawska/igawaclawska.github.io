@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
@@ -40,14 +39,17 @@ const LandingPage = () => {
           <div className={styles.grid}>
             <div>
               <div>
-                <p className={styles.highlightedText}>FRONTEND DEVELOPER</p>
                 <h1>I develop accessible and intuitive digital experiences</h1>
               </div>
-              <p>
-                I’m a Copenhagen-based frontend developer specializing in
-                JavaScript and React, with a background in UX/UI design. Driven
-                by a commitment to web accessibility, I focus on developing
-                high-performing, intuitive digital experiences.
+              <p className={styles.subheadline}>
+                I’m a Copenhagen-based
+                <span className={styles.highlightedText}>
+                  &#32;frontend developer&#32;
+                </span>
+                specializing in JavaScript and React, with a&nbsp;background
+                in&nbsp;UX/UI design. Driven by a&nbsp;commitment to&nbsp;web
+                accessibility, I&nbsp;focus on developing high-performing,
+                intuitive digital&nbsp;experiences.
               </p>
 
               <div>
@@ -60,20 +62,20 @@ const LandingPage = () => {
           </div>
         </Section>
         <Section>
-          <h2 ref={sectionRef} tabIndex={-1}>
+          <h2
+            className={`${styles.heading} ${styles.underline}`}
+            ref={sectionRef}
+            tabIndex={-1}
+          >
             Projects
           </h2>
-          <ProjectCart>
-            <div>
-              <h3>Project Title</h3>
-              <p>Project description</p>
-              <Link to="/project">Go To Project</Link>
-            </div>
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </ProjectCart>
+          <ProjectCart
+            to={"/project"}
+            title="Project Title"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            technologies={["React", "JavaScript", "CSS"]}
+            imageSrc="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          />
         </Section>
       </Main>
       <Footer />
