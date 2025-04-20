@@ -17,7 +17,7 @@ const ProjectCart = ({
   to,
 }: Props) => {
   return (
-    <Link to={to} className={styles.background}>
+    <article className={styles.background}>
       <div className={styles.projectDescriptionContainer}>
         <h3 className={styles.cartHeading}>{title}</h3>
         <p>{description}</p>
@@ -26,7 +26,6 @@ const ProjectCart = ({
             {technologies.map((tech, index) => (
               <span key={index} className={styles.technology}>
                 {tech}
-                {index < technologies.length - 1 && ", "}
               </span>
             ))}
           </div>
@@ -38,7 +37,7 @@ const ProjectCart = ({
       <div className={styles.imageContainer}>
         <img alt="" src={imageSrc} className={styles.projectImage} />
       </div>
-    </Link>
+    </article>
   );
 };
 

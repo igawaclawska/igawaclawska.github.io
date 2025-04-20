@@ -1,6 +1,6 @@
 .background {
-  font: unset;
-  cursor: pointer;
+  /* font: unset;
+  cursor: pointer; */
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   border-radius: 1rem;
@@ -10,6 +10,7 @@
   align-items: start;
   height: 30rem;
   transition: box-shadow 0.3s ease;
+  position: relative;
 }
 
 .background:hover {
@@ -62,6 +63,10 @@
   align-items: center;
   gap: 0;
   transition: color 0.3s ease;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  text-indent: -9999px;
 }
 
 .goToLink::after {
