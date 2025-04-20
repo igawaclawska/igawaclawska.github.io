@@ -1,5 +1,6 @@
 import styles from "./ProjectCart.module.css";
 import { Link, To } from "react-router-dom";
+import Heading from "./Heading";
 
 type Props = {
   title: string;
@@ -19,7 +20,9 @@ const ProjectCart = ({
   return (
     <article className={styles.background}>
       <div className={styles.projectDescriptionContainer}>
-        <h3 className={styles.cartHeading}>{title}</h3>
+        <Heading alignment="left" level={3}>
+          {title}
+        </Heading>
         <p>{description}</p>
         {technologies.length > 0 && (
           <div className={styles.technologies}>

@@ -1,0 +1,79 @@
+.heading {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 32px;
+}
+
+.primaryColor {
+  color: var(--primary-color-dark);
+}
+
+/* .headingLevel3 {
+  font-size: 24px;
+} */
+
+.headingLevel1 {
+  font-size: 2.5rem;
+}
+
+.headingLevel2 {
+  font-size: 2rem;
+}
+
+/* .headingLevel3 {
+  font-size: 1.75rem;
+} */
+
+.headingLevel3 {
+  font-size: 1.5rem;
+}
+
+.headingLevel4 {
+  font-size: 1.5rem;
+}
+
+.headingLevel5 {
+  font-size: 1.25rem;
+}
+
+.headingLevel6 {
+  font-size: 1rem;
+}
+
+.alignLeft {
+  text-align: left;
+  display: block;
+}
+
+.alignCenter {
+  text-align: center;
+  display: block;
+}
+
+.alignRight {
+  text-align: right;
+  display: block;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.alignLeft.underline::after {
+  margin: 0.5rem 0 0 0;
+}
+
+.alignCenter.underline::after {
+  margin: 0.5rem auto 0;
+}
+
+.alignRight.underline::after {
+  margin: 0.5rem 0 0 auto;
+}

@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
 import Section from "../components/Section";
+import Heading from "../components/Heading";
 import ProjectCart from "../components/ProjectCart";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
@@ -62,13 +63,9 @@ const LandingPage = () => {
           </div>
         </Section>
         <Section>
-          <h2
-            className={`${styles.heading} ${styles.underline}`}
-            ref={sectionRef}
-            tabIndex={-1}
-          >
+          <Heading level={2} isUnderlined={true} ref={sectionRef} tabIndex={-1}>
             Projects
-          </h2>
+          </Heading>
           <ProjectCart
             to={"/project"}
             title="Project Title"
