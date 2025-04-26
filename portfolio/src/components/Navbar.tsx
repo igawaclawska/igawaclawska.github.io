@@ -18,7 +18,7 @@ const Navbar = () => {
               href="https://www.linkedin.com/in/iga-waclawska/"
               className={styles.link}
             >
-              Let's connect
+              Let's connect on LinkedIn
             </a>
           </li>
         </ul>
