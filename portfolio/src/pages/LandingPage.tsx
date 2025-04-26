@@ -102,7 +102,7 @@ const LandingPage = () => {
               "Adobe Illustrator",
               "Adobe After Effects",
             ]}
-            imageSrc="zeeguu-mockup.png"
+            imageSrc="opeepl-mockup.png"
           />
         </Section>
       </Main>
