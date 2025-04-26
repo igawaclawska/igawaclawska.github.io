@@ -1,8 +1,9 @@
 .heading {
   position: relative;
-  display: inline-block;
+  display: block;
   text-align: center;
   font-size: 32px;
+  width: 100%;
 }
 
 .primaryColor {

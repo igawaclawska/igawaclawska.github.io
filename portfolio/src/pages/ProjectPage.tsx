@@ -1,3 +1,4 @@
+import { useLayoutEffect } from "react";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
@@ -7,6 +8,18 @@ import Footer from "../components/Footer";
 import styles from "./ProjectPage.module.css";
 
 const ProjectPage = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const technologies = [
+    "React",
+    "JavaScript",
+    "CSS",
+    "Styled Components",
+    "HTML",
+  ];
+
   return (
     <>
       <title>Project</title>
@@ -15,27 +28,42 @@ const ProjectPage = () => {
       </Header>
       <Main>
         <Section>
-          <h1>Zeeguu - app redesign and implementation</h1>
+          <h1>Zeeguu - Frontend Optimization and UI Improvements</h1>
+          <p className={styles.subheadline}>
+            Contributing to the front-end development of the Zeeguu language
+            learning platform, with a focus on accessibility enhancements,
+            responsive UI components, intuitive onboarding flows, and overall
+            user interface improvements. Optimizing front-end performance while
+            refining a mobile-first, component-based architecture to enhance
+            scalability, visual consistency, and user experience. The project is
+            ongoing, with additional examples to be added as development
+            progresses.
+          </p>
+          {technologies.length > 0 && (
+            <div className={styles.technologies}>
+              {technologies.map((tech, index) => (
+                <span key={index} className={styles.technology}>
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
         </Section>
         <Section>
-          <Heading level={2} isUnderlined={true}>
-            Landing Page
+          <Heading alignment="left" level={2} isUnderlined={false}>
+            Hero Section
           </Heading>
           <div className={styles.gridContainer}>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                Before
-              </Heading>
+              <Heading level={3}>Before</Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="landing-page-old.png"
                 alt="Before"
               />
             </div>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                After
-              </Heading>
+              <Heading level={3}>After</Heading>
               <img
                 className={styles.exampleImage}
                 src="landing-page-new.png"
@@ -45,135 +73,125 @@ const ProjectPage = () => {
           </div>
         </Section>
         <Section>
-          <Heading level={2} isUnderlined={true}>
-            LogIn Flow
+          <Heading alignment="left" level={2} isUnderlined={false}>
+            Log in
           </Heading>
           <div className={styles.gridContainer}>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                Before
-              </Heading>
+              <Heading level={3}>Before</Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="log-in-old.png"
                 alt="Before"
               />
             </div>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                After
-              </Heading>
+              <Heading level={3}>After</Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="log-in-new.png"
                 alt="After"
               />
             </div>
           </div>
         </Section>
         <Section>
-          <Heading level={2} isUnderlined={true}>
-            Registration Flow
+          <Heading alignment="left" level={2} isUnderlined={false}>
+            Registration
           </Heading>
           <div className={styles.gridContainer}>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                Before
-              </Heading>
+              <Heading level={3}>Before</Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="register-old.png"
                 alt="Before"
               />
             </div>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                After
-              </Heading>
+              <Heading level={3}>After</Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="register-step1-new.png"
+                alt="After"
+              />
+              <img
+                className={styles.exampleImage}
+                src="register-step2-new.png"
                 alt="After"
               />
             </div>
           </div>
         </Section>
         <Section>
-          <Heading level={2} isUnderlined={true}>
+          <Heading alignment="left" level={2} isUnderlined={false}>
             User Onboarding Flow
           </Heading>
           <div className={styles.gridContainer}>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                Before
-              </Heading>
+              <Heading level={3}>Before</Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="install-extension-old.png"
                 alt="Before"
               />
-            </div>
-            <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                After
-              </Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="extension-installed-old.png"
+                alt="Before"
+              />
+              <figure>
+                <img
+                  className={styles.exampleImage}
+                  src="empty-homepage-old.png"
+                  alt="Before"
+                />
+                <figcaption>Empty homepage before redesign</figcaption>
+              </figure>
+            </div>
+            <div className={styles.exampleContainer}>
+              <Heading level={3}>After</Heading>
+              <img
+                className={styles.exampleImage}
+                src="select-interests.png"
+                alt="After"
+              />
+              <img
+                className={styles.exampleImage}
+                src="exclude-words.png"
+                alt="After"
+              />
+              <img
+                className={styles.exampleImage}
+                src="install-extension-new.png"
+                alt="After"
+              />
+              <img
+                className={styles.exampleImage}
+                src="extension-installed-new.png"
                 alt="After"
               />
             </div>
           </div>
         </Section>
         <Section>
-          <Heading level={2} isUnderlined={true}>
-            Settings Page
+          <Heading alignment="left" level={2} isUnderlined={false}>
+            Settings and Sidebar
           </Heading>
           <div className={styles.gridContainer}>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                Before
-              </Heading>
+              <Heading level={3}>Before</Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="settings-old.png"
                 alt="Before"
               />
             </div>
             <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                After
-              </Heading>
+              <Heading level={3}>After</Heading>
               <img
                 className={styles.exampleImage}
-                src="landing-page-new.png"
-                alt="After"
-              />
-            </div>
-          </div>
-        </Section>
-        <Section>
-          <Heading level={2} isUnderlined={true}>
-            Navigation
-          </Heading>
-          <div className={styles.gridContainer}>
-            <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                Before
-              </Heading>
-              <img
-                className={styles.exampleImage}
-                src="landing-page-new.png"
-                alt="Before"
-              />
-            </div>
-            <div className={styles.exampleContainer}>
-              <Heading alignment="left" level={3}>
-                After
-              </Heading>
-              <img
-                className={styles.exampleImage}
-                src="landing-page-new.png"
+                src="settings-new.png"
                 alt="After"
               />
             </div>

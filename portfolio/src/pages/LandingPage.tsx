@@ -40,7 +40,7 @@ const LandingPage = () => {
           <div className={styles.grid}>
             <div>
               <div>
-                <h1>I develop accessible and intuitive digital experiences</h1>
+                <h1>I develop user-first digital experiences</h1>
               </div>
               <p className={styles.subheadline}>
                 I’m a Copenhagen-based
@@ -48,9 +48,9 @@ const LandingPage = () => {
                   &#32;frontend developer&#32;
                 </span>
                 specializing in JavaScript and React, with a&nbsp;background
-                in&nbsp;UX/UI design. Driven by a&nbsp;commitment to&nbsp;web
-                accessibility, I&nbsp;focus on developing high-performing,
-                intuitive digital&nbsp;experiences.
+                in&nbsp;UX/UI design. My goal is to create digital solutions
+                that are accessible and inclusive for everyone, while also being
+                intuitive and high-performing.
               </p>
 
               <div>
@@ -68,10 +68,21 @@ const LandingPage = () => {
           </Heading>
           <ProjectCart
             to={"/project"}
-            title="Project Title"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            technologies={["React", "JavaScript", "CSS"]}
-            imageSrc="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            title="Zeeguu - Frontend Optimization and UI Improvements"
+            description="Contributing to the front-end development of the Zeeguu language
+            learning platform, with a focus on accessibility enhancements,
+            responsive UI components, intuitive onboarding flows, and overall
+            user interface improvements. Optimizing front-end performance while
+            refining a mobile-first, component-based architecture to enhance
+            scalability, visual consistency, and user experience."
+            technologies={[
+              "React",
+              "JavaScript",
+              "CSS",
+              "Styled Components",
+              "HTML",
+            ]}
+            imageSrc="zeeguu-mockup.png"
           />
         </Section>
       </Main>

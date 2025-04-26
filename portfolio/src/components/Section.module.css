@@ -9,11 +9,11 @@
   max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
-  max-width: var(--max-width);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 3rem;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 @media (max-width: 992px) {
