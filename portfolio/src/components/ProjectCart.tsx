@@ -8,6 +8,7 @@ type Props = {
   technologies: string[];
   imageSrc: string;
   to: To;
+  isExternal?: boolean;
 };
 
 const ProjectCart = ({
@@ -16,6 +17,7 @@ const ProjectCart = ({
   technologies,
   imageSrc,
   to,
+  isExternal = false,
 }: Props) => {
   return (
     <article className={styles.background}>
@@ -33,9 +35,20 @@ const ProjectCart = ({
             ))}
           </div>
         )}
-        <Link className={styles.goToLink} to={to}>
-          Learn more about this project
-        </Link>
+        {isExternal ? (
+          <a
+            className={styles.goToLink}
+            href={to as string} // Cast `to` as a string for external links
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn more about this project
+          </a>
+        ) : (
+          <Link className={styles.goToLink} to={to as To}>
+            Learn more about this project
+          </Link>
+        )}
       </div>
       <div className={styles.imageContainer}>
         <img alt="" src={imageSrc} className={styles.projectImage} />

@@ -68,19 +68,39 @@ const LandingPage = () => {
           </Heading>
           <ProjectCart
             to={"/project"}
-            title="Zeeguu - Frontend Optimization and UI Improvements"
-            description="Contributing to the front-end development of the Zeeguu language
-            learning platform, with a focus on accessibility enhancements,
-            responsive UI components, intuitive onboarding flows, and overall
+            title={`Zeeguu - Frontend Optimization and UI\u00A0Improvements`}
+            description={`Contributing to the front-end development of the Zeeguu language learning 
+            platform, with a focus on accessibility enhancements, responsive UI components, intuitive onboarding flows, and overall
             user interface improvements. Optimizing front-end performance while
-            refining a mobile-first, component-based architecture to enhance
-            scalability, visual consistency, and user experience."
+            refining a\u00A0mobile\u2011first, component-based architecture to enhance
+            scalability, visual consistency, and user\u00A0experience.`}
             technologies={[
               "React",
               "JavaScript",
               "CSS",
               "Styled Components",
               "HTML",
+            ]}
+            imageSrc="zeeguu-mockup.png"
+          />
+          <ProjectCart
+            isExternal={true}
+            to={"https://www.opeepl.com/"}
+            title={`Opeepl - Website\u00A0Design`}
+            description={`Contributed to the full redesign of the Opeepl.com website with its subpages, 
+            focusing on\u00A0creating a clean, mobile\u2011friendly\u00A0UI layout aligned with the brand’s 
+            visual style guide. Designed and delivered modular Figma mockups optimized for\u00A0seamless integration
+            with the Squarespace templates, allowing faster content updates and easier maintenance. Created static and 
+            animated visual assets, including illustrations and animations, to\u00A0improve visual storytelling and strengthen 
+            brand\u00A0presence.`}
+            technologies={[
+              "UX/UI",
+              "Prototyping",
+              "Graphic Design",
+              "Motion Design",
+              "Figma",
+              "Adobe Illustrator",
+              "Adobe After Effects",
             ]}
             imageSrc="zeeguu-mockup.png"
           />
