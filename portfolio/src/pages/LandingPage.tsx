@@ -62,7 +62,7 @@ const LandingPage = () => {
             <img className={styles.profileImg} alt="" src="profile-photo.png" />
           </div>
         </Section>
-        <Section>
+        <Section backgroundType="medium">
           <Heading level={2} isUnderlined={true} ref={sectionRef} tabIndex={-1}>
             Projects
           </Heading>

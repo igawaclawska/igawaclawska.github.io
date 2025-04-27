@@ -28,29 +28,31 @@ const ProjectPage = () => {
       </Header>
       <Main>
         <Section>
-          <h1>Zeeguu - Frontend Optimization and UI Improvements</h1>
-          <p className={styles.subheadline}>
-            Contributing to the front-end development of the Zeeguu language
-            learning platform, with a focus on accessibility enhancements,
-            responsive UI components, intuitive onboarding flows, and overall
-            user interface improvements. Optimizing front-end performance while
-            refining a mobile-first, component-based architecture to enhance
-            scalability, visual consistency, and user experience. The project is
-            ongoing, with additional examples to be added as development
-            progresses.
-          </p>
-          {technologies.length > 0 && (
-            <div className={styles.technologies}>
-              {technologies.map((tech, index) => (
-                <span key={index} className={styles.technology}>
-                  {tech}
-                </span>
-              ))}
-            </div>
-          )}
+          <div className={styles.coverContainer}>
+            <h1>Zeeguu: Frontend&nbsp;Optimization and UI&nbsp;Improvements</h1>
+            <p className={styles.subheadline}>
+              Contributing to the front-end development of the Zeeguu language
+              learning platform, with a focus on accessibility enhancements,
+              responsive UI components, intuitive onboarding flows, and overall
+              user interface improvements. Optimizing front-end performance
+              while refining a mobile-first, component-based architecture to
+              enhance scalability, visual consistency, and user experience. The
+              project is ongoing, with additional examples to be added as
+              development progresses.
+            </p>
+            {technologies.length > 0 && (
+              <div className={styles.technologies}>
+                {technologies.map((tech, index) => (
+                  <span key={index} className={styles.technology}>
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
         </Section>
-        <Section>
-          <Heading alignment="left" level={2} isUnderlined={false}>
+        <Section backgroundType="medium">
+          <Heading alignment="center" level={2} isUnderlined={true}>
             Hero Section
           </Heading>
           <div className={styles.gridContainer}>
@@ -73,7 +75,7 @@ const ProjectPage = () => {
           </div>
         </Section>
         <Section>
-          <Heading alignment="left" level={2} isUnderlined={false}>
+          <Heading alignment="center" level={2} isUnderlined={true}>
             Log in
           </Heading>
           <div className={styles.gridContainer}>
@@ -95,8 +97,8 @@ const ProjectPage = () => {
             </div>
           </div>
         </Section>
-        <Section>
-          <Heading alignment="left" level={2} isUnderlined={false}>
+        <Section backgroundType="medium">
+          <Heading alignment="center" level={2} isUnderlined={true}>
             Registration
           </Heading>
           <div className={styles.gridContainer}>
@@ -124,7 +126,7 @@ const ProjectPage = () => {
           </div>
         </Section>
         <Section>
-          <Heading alignment="left" level={2} isUnderlined={false}>
+          <Heading alignment="center" level={2} isUnderlined={true}>
             User Onboarding Flow
           </Heading>
           <div className={styles.gridContainer}>
@@ -174,8 +176,8 @@ const ProjectPage = () => {
             </div>
           </div>
         </Section>
-        <Section>
-          <Heading alignment="left" level={2} isUnderlined={false}>
+        <Section backgroundType="medium">
+          <Heading alignment="center" level={2} isUnderlined={true}>
             Settings and Sidebar
           </Heading>
           <div className={styles.gridContainer}>

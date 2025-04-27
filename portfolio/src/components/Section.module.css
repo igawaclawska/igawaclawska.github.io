@@ -5,6 +5,14 @@
   padding: var(--padding-md) var(--padding-sm);
 }
 
+.lightBackground {
+  background-color: var(--background-color);
+}
+
+.mediumBackground {
+  background-color: hsl(0, 7%, 96%);
+}
+
 .content {
   max-width: var(--max-width);
   width: 100%;

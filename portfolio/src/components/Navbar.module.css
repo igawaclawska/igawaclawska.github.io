@@ -31,6 +31,7 @@
   text-decoration: inherit;
   white-space: nowrap;
   overflow-wrap: normal;
+  font-size: 1.1rem;
 }
 
 .link:hover {
@@ -46,4 +47,5 @@ a {
   font-weight: 600;
   color: var(--text-color);
   text-decoration: inherit;
+  font-size: 1.1rem;
 }
