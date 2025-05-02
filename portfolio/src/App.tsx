@@ -8,7 +8,7 @@ function App() {
     <Router basename="/portfolio">
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/zeeguu-project" element={<ProjectPage />} />
       </Routes>
     </Router>
   );

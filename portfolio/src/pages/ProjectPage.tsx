@@ -6,6 +6,20 @@ import Heading from "../components/Heading";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
 import styles from "./ProjectPage.module.css";
+import landingPageOld from "../assets/landing-page-old.png";
+import landingPageNew from "../assets/landing-page-new.png";
+import registerOld from "../assets/register-old.png";
+import registerStep1New from "../assets/register-step1-new.png";
+import registerStep2New from "../assets/register-step2-new.png";
+import installExtensionOld from "../assets/install-extension-old.png";
+import extensionInstalledOld from "../assets/extension-installed-old.png";
+import emptyHomepageOld from "../assets/empty-homepage-old.png";
+import selectInterests from "../assets/select-interests.png";
+import excludeWords from "../assets/exclude-words.png";
+import installExtensionNew from "../assets/install-extension-new.png";
+import extensionInstalledNew from "../assets/extension-installed-new.png";
+import settingsOld from "../assets/settings-old.png";
+import settingsNew from "../assets/settings-new.png";
 
 const ProjectPage = () => {
   useLayoutEffect(() => {
@@ -62,7 +76,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="landing-page-old.png"
+                    src={landingPageOld}
                     alt={`Zeeguu desktop landing page hero section before redesign. 
                   At the top, an orange bar contains the Zeeguu logo on the left and language toggle buttons for Danish and English on the right, 
                   shown with circular flags. Centered below is a large orange elephant logo, followed by the project name ‘Zeeguu’ in bold orange text. 
@@ -84,7 +98,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="landing-page-new.png"
+                    src={landingPageNew}
                     alt="Zeeguu desktop landing page hero section before redesign. Main heading says: ‘Learn a language by reading what you love and improve your vocabulary.’ Subheading explains: ‘Find interesting articles, translate words as you read, and use spaced repetition to remember them.’ Below, a button labeled ‘Start Learning.’ Language selection options include Danish, Dutch, French, Italian, Swedish, Romanian, and Spanish. Top of the page includes the Zeeguu logo and two navigation links: ‘Log In’ and ‘Register.’"
                   />
                   <figcaption>
@@ -110,7 +124,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="register-old.png"
+                    src={registerOld}
                     alt="Zeeguu desktop registration screen with an orange background. A centered white card displays a white elephant logo, a 'Create Account' heading,input fields for Invite Code, Name, Email, and Password, followed by dropdowns for Learned Language, 
                 Level in Learned Language, and Base Language (English Recommended). Below is a 17-line privacy notice and a 'Create Account' button at the bottom."
                   />
@@ -131,7 +145,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="register-step1-new.png"
+                    src={registerStep1New}
                     alt="Zeeguu desktop registration screen - step 1. Language selection form with three dropdown inputs: one for selecting the language to learn, another for current proficiency level, and a third for preferred translation language. The form is displayed on a white card against an orange background. At the top, there's a notice about needing an invite code to continue registration, with the zeeguu.team@gmail.com contact email provided. A prominent 'Next' button appears at the bottom, along with a 'Log In' link for existing users."
                   />
                   <figcaption>
@@ -143,7 +157,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="register-step2-new.png"
+                    src={registerStep2New}
                     alt="Zeeguu desktop registration screen - step 2. Beta account creation form on a white card against an orange background. The form includes fields for: invite code with a note to request one at zeeguu.team@gmail.com, full name input, email address input, and password fields with a minimum 4-character requirement. At the bottom is a checkbox to agree to the Privacy Notice, followed by a prominent 'Create Account' button in orange. Below the form is a 'Log In' link for existing users."
                   />
                   <figcaption>
@@ -169,7 +183,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="install-extension-old.png"
+                    src={installExtensionOld}
                     alt="Zeeguu browser extension installation page on a white card with a cream background. The page is titled 'Welcome to Zeeguu' with a subtitle 'Time to install the Zeeguu Reader browser extension'. The content explains that users can access words, article recommendations, and exercises on zeeguu.org, but only for articles shared by teachers or saved via the extension. Three key features are listed: one-click translation and pronunciation, removal of excess clutter from articles, and generation of personalized vocabulary exercises. Two prominent buttons are displayed: 'Install for Chrome or Edge' and 'Install for Firefox'. At the bottom, there's a link stating 'Don't want the extension? Go to articles.'"
                   />
                   <figcaption>
@@ -185,7 +199,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="extension-installed-old.png"
+                    src={extensionInstalledOld}
                     alt="Zeeguu extension installation confirmation page with a white background. The page displays 'Extension is installed!' at the top, followed by a heading 'Pin it to the toolbar to make it easy to access'. Below is a link to 'Learn how it works by watching this video'. The main content shows a screenshot of Wikipedia's Chrome Web Store page with the Zeeguu extension icon visible in the browser's toolbar. At the bottom is an orange button labeled 'Go to article recommendations' which spans the full width of the content area."
                   />
                   <figcaption>
@@ -198,7 +212,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="empty-homepage-old.png"
+                    src={emptyHomepageOld}
                     alt="Zeeguu empty homepage showing navigation and search interface. Top navigation displays 'Recommended | Saved' tabs, with 'Recommended' being active. Below are 'Interests' and 'Non-interests' filter buttons, followed by a search bar labeled 'Search all articles' with a magnifying glass icon. A 'Sort by:' dropdown offers 'Length' and 'Level' options. The main content area shows a message: 'We can not find articles in the language you want to study and for your current interests. Consider changing your interests. Alternatively read articles with the help of the Zeeguu browser extension. You can also add articles to My Texts through the Save article to Zeeguu.org button from within the extension.' The left sidebar contains navigation links for Home, Words, Exercises, History, Statistics, Teacher Site, Settings, and Logout, with an orange elephant logo at the top."
                   />
                   <figcaption>
@@ -215,7 +229,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="select-interests.png"
+                    src={selectInterests}
                     alt="Zeeguu interests selection page showing a white card on an orange background. At the top is an orange elephant logo followed by the heading 'What would you like to read about?' Below are seven topic buttons arranged in three rows: 'Business' and 'Culture & Art' in the first row, 'Politics', 'Sports', and 'Technology & Science' in the second row, and 'Travel & Tourism' in the third row. Some topics are outlined in grey while others have an orange fill, indicating selected state. At the bottom is reassuring text 'You can always change it later' followed by a prominent orange 'Next' button with an arrow icon."
                   />
                   <figcaption>
@@ -227,7 +241,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="exclude-words.png"
+                    src={excludeWords}
                     alt="Zeeguu word exclusion setup page showing a white card on an orange background. At the top is an orange elephant logo, followed by the heading 'Would you like to exclude articles and exercises containing particular words or phrases?' Below is a text input field with placeholder text 'E.g. robbery' and a plus button to its right. Helper text underneath reads 'Add one unwanted word or phrase at a time'. At the bottom of the card is reassuring text 'You can always change it later' and a prominent 'Next' button with an arrow icon."
                   />
                   <figcaption>
@@ -239,7 +253,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="install-extension-new.png"
+                    src={installExtensionNew}
                     alt="Zeeguu browser extension installation page showing a white card on an orange background. At the top is an orange elephant logo above the heading 'Read and translate foreign articles with the Zeeguu browser extension'. The center features an illustration demonstrating the extension's functionality, showing highlighted words 'artists', 'a museum', and 'or' with toggle switches for 'See translation' and 'Hear pronunciation'. Below, there's text explaining browser compatibility: 'The Chrome Web Store extension also works in Edge, Opera, Arc, Vivaldi, Brave and other Chromium based browsers.' At the bottom is a prominent 'Install from Chrome Web Store' button with an arrow icon, followed by an 'I will install it later' link."
                   />
                   <figcaption>
@@ -253,7 +267,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="extension-installed-new.png"
+                    src={extensionInstalledNew}
                     alt="Zeeguu extension installation success page showing a white card on an orange background. At the top is an orange elephant logo followed by the heading 'Right-click anywhere on any article's page to access the Zeeguu extension'. The center features an illustration demonstrating the right-click functionality, showing a webpage with a popup menu and cursor. Below the illustration, there's a prominent orange button labeled 'Go to Zeeguu' at the bottom of the card."
                   />
                   <figcaption>
@@ -278,7 +292,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="settings-old.png"
+                    src={settingsOld}
                     alt="Zeeguu settings page with an orange sidebar. The main content area shows a settings form with the following fields: Name (input field), Email (input field), Learned Language (dropdown showing Danish), Level in Learned Language (dropdown), Native Language (dropdown showing Polish), and System Language (dropdown showing English). Below these fields is an orange 'Save' button. At the bottom is a section showing 'Your current class is: Zeeguu Betatesters' with a 'Change Class' option that includes an input field for a new invite code and an orange 'Change Class' button."
                   />
                   <figcaption>
@@ -297,7 +311,7 @@ const ProjectPage = () => {
                 <figure>
                   <img
                     className={styles.exampleImage}
-                    src="settings-new.png"
+                    src={settingsNew}
                     alt="Redesigned Zeeguu settings page with an orange sidebar containing navigation links. The main content area is organized into four sections: 'My Account' with 'Profile Details' and 'Language Settings' options, 'Reading Preferences' containing 'Interests' and 'Excluded Keywords' options, 'Exercises' with 'Exercise Type Preferences', and 'Account Management' with a 'Delete Account' option. Each option is presented as a clickable card with a right arrow icon, indicating they lead to detailed settings pages. The layout is clean and hierarchical, with clear section headings in gray text."
                   />
                   <figcaption>

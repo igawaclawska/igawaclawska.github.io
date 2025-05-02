@@ -8,6 +8,9 @@ import ProjectCart from "../components/ProjectCart";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
 import styles from "./LandingPage.module.css";
+import profilePhoto from "../assets/profile-photo.png";
+import zeeguuMockup from "../assets/zeeguu-mockup.png";
+import opeeplMockup from "../assets/opeepl-mockup.png";
 
 const LandingPage = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -59,7 +62,7 @@ const LandingPage = () => {
                 </Button>
               </div>
             </div>
-            <img className={styles.profileImg} alt="" src="profile-photo.png" />
+            <img className={styles.profileImg} alt="" src={profilePhoto} />
           </div>
         </Section>
         <Section backgroundType="medium">
@@ -67,7 +70,7 @@ const LandingPage = () => {
             Projects
           </Heading>
           <ProjectCart
-            to={"/project"}
+            to={"/zeeguu-project"}
             title={`Zeeguu - Frontend Optimization and UI\u00A0Improvements`}
             description={`Contributing to the front-end development of the Zeeguu language learning 
             platform, with a focus on accessibility enhancements, responsive UI components, intuitive onboarding flows, and overall
@@ -81,7 +84,7 @@ const LandingPage = () => {
               "Styled Components",
               "HTML",
             ]}
-            imageSrc="zeeguu-mockup.png"
+            imageSrc={zeeguuMockup}
           />
           <ProjectCart
             isExternal={true}
@@ -102,7 +105,7 @@ const LandingPage = () => {
               "Adobe Illustrator",
               "Adobe After Effects",
             ]}
-            imageSrc="opeepl-mockup.png"
+            imageSrc={opeeplMockup}
           />
         </Section>
       </Main>
