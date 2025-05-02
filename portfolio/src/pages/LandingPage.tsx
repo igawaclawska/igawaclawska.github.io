@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import projects from "../data/projects.json";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
@@ -9,11 +10,21 @@ import Button from "../components/Button";
 import Footer from "../components/Footer";
 import styles from "./LandingPage.module.css";
 import profilePhoto from "../assets/profile-photo.png";
-import zeeguuMockup from "../assets/zeeguu-mockup.png";
-import opeeplMockup from "../assets/opeepl-mockup.png";
+
+export interface Project {
+  id: number;
+  link: string;
+  isLinkExternal?: boolean;
+  title: string;
+  description: string;
+  technologies: string[];
+  imageSrc: string;
+}
 
 const LandingPage = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  console.log("projects", projects);
 
   const handleScrollToSection = () => {
     if (sectionRef.current) {
@@ -69,44 +80,18 @@ const LandingPage = () => {
           <Heading level={2} isUnderlined={true} ref={sectionRef} tabIndex={-1}>
             Projects
           </Heading>
-          <ProjectCart
-            to={"/zeeguu-project"}
-            title={`Zeeguu - Frontend Optimization and UI\u00A0Improvements`}
-            description={`Contributing to the front-end development of the Zeeguu language learning 
-            platform, with a focus on accessibility enhancements, responsive UI components, intuitive onboarding flows, and overall
-            user interface improvements. Optimizing front-end performance while
-            refining a\u00A0mobile\u2011first, component-based architecture to enhance
-            scalability, visual consistency, and user\u00A0experience.`}
-            technologies={[
-              "React",
-              "JavaScript",
-              "CSS",
-              "Styled Components",
-              "HTML",
-            ]}
-            imageSrc={zeeguuMockup}
-          />
-          <ProjectCart
-            isExternal={true}
-            to={"https://www.opeepl.com/"}
-            title={`Opeepl - Website\u00A0Design`}
-            description={`Contributed to the full redesign of the Opeepl.com website with its subpages, 
-            focusing on\u00A0creating a clean, mobile\u2011friendly\u00A0UI layout aligned with the brand’s 
-            visual style guide. Designed and delivered modular Figma mockups optimized for\u00A0seamless integration
-            with the Squarespace templates, allowing faster content updates and easier maintenance. Created static and 
-            animated visual assets, including illustrations and animations, to\u00A0improve visual storytelling and strengthen 
-            brand\u00A0presence.`}
-            technologies={[
-              "UX/UI",
-              "Prototyping",
-              "Graphic Design",
-              "Motion Design",
-              "Figma",
-              "Adobe Illustrator",
-              "Adobe After Effects",
-            ]}
-            imageSrc={opeeplMockup}
-          />
+          {projects &&
+            projects.map((project: Project) => (
+              <ProjectCart
+                key={project.id}
+                to={project.link}
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
+                imageSrc={project.imageSrc}
+                isExternal={project.isLinkExternal}
+              />
+            ))}
         </Section>
       </Main>
       <Footer />
