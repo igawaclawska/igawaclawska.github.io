@@ -1,0 +1,97 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  position: relative;
+  border-radius: 12px;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+.exampleImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.exampleHeading {
+  justify-self: left;
+  margin-bottom: 1rem;
+}
+
+.exampleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coverContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.bullets {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .coverContainer {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .coverContainer > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.subheadline {
+  font-size: 16px;
+  color: var(--text-color);
+  width: 100%;
+  max-width: 880px;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin: 0 0 1rem 0;
+  background-color: hsl(0, 7%, 96%);
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: solid 1px hsl(0, 7%, 94%);
+}
+
+.technology {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+figcaption {
+  text-align: left;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.imagesColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}

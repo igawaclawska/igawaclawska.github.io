@@ -1,0 +1,51 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: var(--padding-sm);
+}
+
+.navContainer {
+  width: var(--max-width);
+  max-width: var(--max-width);
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  font-size: 1rem;
+}
+
+.link {
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: inherit;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  font-size: 1.1rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.link:visited {
+  color: var(--text-color);
+}
+
+a {
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: inherit;
+  font-size: 1.1rem;
+}

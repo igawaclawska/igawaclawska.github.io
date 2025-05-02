@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-sm);
+}
+
+.content {
+  width: var(--max-width);
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
