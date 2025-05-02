@@ -41,6 +41,10 @@
   padding-bottom: 2rem;
 }
 
+.bullets {
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .coverContainer {
     align-items: flex-start;
