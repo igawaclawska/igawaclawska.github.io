@@ -1,7 +1,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: 5rem;
   position: relative;
   border-radius: 12px;
   padding: 1rem 1.5rem 1.5rem 1.5rem;
@@ -80,4 +80,18 @@
   padding: 0.5rem 1rem;
   color: var(--text-color);
   font-weight: 600;
+}
+
+figcaption {
+  text-align: left;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.imagesColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
