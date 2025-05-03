@@ -3,7 +3,7 @@
 :root {
   --primary-color-bright: hsl(14, 87%, 82%);
   --primary-color: hsl(15, 85%, 61%);
-  --primary-color-dark: hsl(18, 85%, 48%);
+  --primary-color-dark: hsl(18, 85%, 51%);
   --background-color: hsl(0, 0%, 98%);
   --text-color: hsl(0, 0%, 15%);
   --max-width: 75rem;
