@@ -3,17 +3,11 @@ import styles from "./Section.module.css";
 
 type Props = {
   children: ReactNode | ReactNode[];
-  backgroundType?: "light" | "medium";
 };
 
-const Section = ({ children, backgroundType = "light" }: Props) => {
-  const backgroundClass =
-    backgroundType === "medium"
-      ? styles.mediumBackground
-      : styles.lightBackground;
-
+const Section = ({ children }: Props) => {
   return (
-    <section className={`${styles.section} ${backgroundClass}`}>
+    <section className={`${styles.section}`}>
       <div className={styles.content}>{children}</div>
     </section>
   );
