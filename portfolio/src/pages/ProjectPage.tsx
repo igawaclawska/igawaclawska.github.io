@@ -1,5 +1,6 @@
 import { useLayoutEffect } from "react";
 import zeeguuProject from "../data/zeeguuProject.json";
+import projects from "../data/projects.json";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
@@ -13,37 +14,22 @@ const ProjectPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const technologies = [
-    "React",
-    "JavaScript",
-    "CSS",
-    "Styled Components",
-    "HTML",
-  ];
+  const project = projects[0];
 
   return (
     <>
-      <title>Project</title>
+      <title>Zeeguu</title>
       <Header>
         <Navbar />
       </Header>
       <Main>
         <Section>
           <div className={styles.coverContainer}>
-            <h1>Zeeguu: Frontend&nbsp;Optimization and UI&nbsp;Improvements</h1>
-            <p className={styles.subheadline}>
-              Contributing to the front-end development of the Zeeguu language
-              learning platform, with a focus on accessibility enhancements,
-              responsive UI components, intuitive onboarding flows, and overall
-              user interface improvements. Optimizing front-end performance
-              while refining a mobile-first, component-based architecture to
-              enhance scalability, visual consistency, and user experience. The
-              project is ongoing, with additional examples to be added as
-              development&nbsp;progresses.
-            </p>
-            {technologies.length > 0 && (
+            <h1>{project.title}</h1>
+            <p className={styles.subheadline}>{project.description}</p>
+            {project.technologies.length > 0 && (
               <div className={styles.technologies}>
-                {technologies.map((tech, index) => (
+                {project.technologies.map((tech, index) => (
                   <span key={index} className={styles.technology}>
                     {tech}
                   </span>
