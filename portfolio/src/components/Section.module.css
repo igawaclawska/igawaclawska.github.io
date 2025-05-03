@@ -5,11 +5,11 @@
   padding: var(--padding-md) var(--padding-sm);
 }
 
-.lightBackground {
+.section:nth-child(odd) {
   background-color: var(--background-color);
 }
 
-.mediumBackground {
+.section:nth-child(even) {
   background-color: hsl(0, 7%, 96%);
 }
 

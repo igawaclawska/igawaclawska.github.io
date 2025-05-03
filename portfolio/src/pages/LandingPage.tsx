@@ -11,20 +11,8 @@ import Footer from "../components/Footer";
 import styles from "./LandingPage.module.css";
 import profilePhoto from "../assets/profile-photo.png";
 
-export interface Project {
-  id: number;
-  link: string;
-  isLinkExternal?: boolean;
-  title: string;
-  description: string;
-  technologies: string[];
-  imageSrc: string;
-}
-
 const LandingPage = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-
-  console.log("projects", projects);
 
   const handleScrollToSection = () => {
     if (sectionRef.current) {
@@ -57,7 +45,7 @@ const LandingPage = () => {
                 <h1>I develop user-first digital experiences</h1>
               </div>
               <p className={styles.subheadline}>
-                I’m a Copenhagen-based
+                I'm a Copenhagen-based
                 <span className={styles.highlightedText}>
                   &#32;frontend developer&#32;
                 </span>
@@ -76,12 +64,12 @@ const LandingPage = () => {
             <img className={styles.profileImg} alt="" src={profilePhoto} />
           </div>
         </Section>
-        <Section backgroundType="medium">
+        <Section>
           <Heading level={2} isUnderlined={true} ref={sectionRef} tabIndex={-1}>
             Projects
           </Heading>
           {projects &&
-            projects.map((project: Project) => (
+            projects.map((project) => (
               <ProjectCart
                 key={project.id}
                 to={project.link}
