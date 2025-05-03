@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
-  --primary-color: #ef7240;
-  --primary-color-dark: #d44911;
-  --background-color: #fafafa;
-  --text-color: #25282b;
+  --primary-color-bright: hsl(14, 87%, 82%);
+  --primary-color: hsl(15, 85%, 61%);
+  --primary-color-dark: hsl(18, 85%, 51%);
+  --background-color: hsl(0, 0%, 98%);
+  --text-color: hsl(0, 0%, 15%);
   --max-width: 75rem;
   --padding-md: 4rem;
   --padding-sm: 2rem;
