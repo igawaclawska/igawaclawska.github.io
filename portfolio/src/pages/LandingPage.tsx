@@ -9,7 +9,7 @@ import ProjectCart from "../components/ProjectCart";
 import Button from "../components/Button";
 import Footer from "../components/Footer";
 import styles from "./LandingPage.module.css";
-import profilePhoto from "../assets/profile-photo.png";
+import profilePhoto from "../assets/profile-photo-mini.png";
 
 const LandingPage = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
