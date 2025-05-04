@@ -3,7 +3,9 @@
   flex-direction: row;
   justify-content: center;
   background-color: var(--background-color);
-  padding: var(--padding-sm);
+  padding: 1.5rem var(--padding-sm);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px;
+  margin-bottom: 1rem;
 }
 
 .navContainer {
@@ -52,6 +54,6 @@ a {
 
 @media (max-width: 992px) {
   .nav {
-    padding: var(--padding-sm) 1rem;
+    padding: 1.5rem 1rem;
   }
 }
