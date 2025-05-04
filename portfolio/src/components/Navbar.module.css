@@ -49,3 +49,9 @@ a {
   text-decoration: inherit;
   font-size: 1.1rem;
 }
+
+@media (max-width: 992px) {
+  .nav {
+    padding: var(--padding-sm) 1rem;
+  }
+}
