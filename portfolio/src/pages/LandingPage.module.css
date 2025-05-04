@@ -4,7 +4,7 @@
   grid-auto-rows: minmax(23rem, auto);
   gap: 2rem;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .grid > div {
@@ -32,6 +32,7 @@
   font-weight: 600;
   font-family: 20px;
   margin: 0 0.25rem;
+  padding: 0 0.1rem;
   border-radius: 0.2rem;
   background-color: var(--primary-color-bright);
 }

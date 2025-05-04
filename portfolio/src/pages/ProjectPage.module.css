@@ -11,13 +11,14 @@
   .gridContainer {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    gap: 4rem;
   }
 }
 
 .exampleImage {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
@@ -38,7 +39,7 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .bullets {
