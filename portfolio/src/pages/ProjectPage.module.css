@@ -96,3 +96,25 @@ figcaption {
   flex-direction: column;
   gap: 3rem;
 }
+
+.imagesColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+}
+
+.imagesColumn > figure {
+  position: relative;
+}
+
+.imagesColumn > figure:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  opacity: 0.3;
+}
