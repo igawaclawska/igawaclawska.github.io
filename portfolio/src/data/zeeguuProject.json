@@ -9,7 +9,7 @@
           "id": 1,
           "imgSrc": "landing-page-old.png",
           "alt": "Zeeguu desktop landing page hero section before redesign. At the top, an orange bar contains the Zeeguu logo on the left and language toggle buttons for Danish and English on the right, shown with circular flags. Centered below is a large orange elephant logo, followed by the project name 'Zeeguu' in bold orange text. A description states: A research project aiming to personalize reading and vocabulary practice in foreign languages.' Below are two centered buttons: an orange 'Log in' button and an outlined 'Become a Betatester!' button.",
-          "description": "The value proposition of the platform was ambiguous. A visually prominent Login button next to a less noticeable Registration button with unclear wording, led users to mistakenly click Login first."
+          "description": "The\u00A0value proposition of\u00A0the\u00A0platform was\u00A0ambiguous. A\u00A0visually prominent login button next to\u00A0a\u00A0less noticeable registration button with\u00A0unclear wording, led newcomers to\u00A0mistakenly click login\u00A0first."
         }
       ]
     },
@@ -20,7 +20,7 @@
           "id": 1,
           "imgSrc": "landing-page-new.png",
           "alt": "Zeeguu desktop landing page hero section after redesign. Main heading says: 'Learn a language by reading what you love and improve your vocabulary.' Subheading explains: 'Find interesting articles, translate words as you read, and use spaced repetition to remember them' Below, a button labeled 'Start Learning.' Language selection options include Danish, Dutch, French, Italian, Swedish, Romanian, and Spanish. Top of the page includes the Zeeguu logo and two navigation links: 'Log In' and 'Register.'",
-          "description": "A clear value proposition highlights all the benefits users gain from using the platform. The registration button is more visually prominent, with concise and clear wording. The list of available languages provides a transparent overview of the learning options."
+          "description": "A\u00A0clear value proposition highlights all the\u00A0benefits users gain from\u00A0using the\u00A0platform. The\u00A0registration button is\u00A0more visually prominent, with\u00A0concise and clear wording. The\u00A0list of\u00A0available languages provides a\u00A0transparent overview of\u00A0the\u00A0learning\u00A0options."
         }
       ]
     }
@@ -35,7 +35,7 @@
           "id": 1,
           "imgSrc": "register-old.png",
           "alt": "Zeeguu desktop registration screen with an orange background. A centered white card displays a white elephant logo, a 'Create Account' heading, input fields for Invite Code, Name, Email, and Password, followed by dropdowns for Learned Language, Level in Learned Language, and Base Language (English Recommended). Below is a 17-line privacy notice and a 'Create Account' button at the bottom.",
-          "description": "Unclear labeling on input fields and dropdowns caused confusion, and inconsistent styling affected the overall experience. The abundance of options and content could feel overwhelming, and the 'Create account' button was difficult to find - particularly on small laptop screens and mobile devices."
+          "description": "Unclear labeling on\u00A0input fields and dropdowns caused confusion, and inconsistent styling affected the\u00A0overall experience. The\u00A0abundance of\u00A0options and content could feel overwhelming, and the\u00A0'Create account' button was difficult to\u00A0find - particularly on\u00A0small laptop screens and mobile\u00A0devices."
         }
       ]
     },
@@ -47,13 +47,13 @@
           "id": 1,
           "imgSrc": "register-step1-new.png",
           "alt": "Zeeguu desktop registration screen - step 1. Language selection form with three dropdown inputs: one for selecting the language to learn, another for current proficiency level, and a third for preferred translation language. The form is displayed on a white card against an orange background. At the top, there's a notice about needing an invite code to continue registration, with the zeeguu.team@gmail.com contact email provided. A prominent 'Next' button appears at the bottom, along with a 'Log In' link for existing users.",
-          "description": "User Registration - Step 1: Language selection allows users to select their practiced languages. The dropdown labels have clearer, more user-friendly descriptions."
+          "description": "User Registration - Step 1: Language selection allows users to\u00A0select their practiced languages. The\u00A0dropdown labels have clearer, more user\u2011friendly\u00A0descriptions."
         },
         {
           "id": 2,
           "imgSrc": "register-step2-new.png",
           "alt": "Zeeguu desktop registration screen - step 2. Beta account creation form on a white card against an orange background. The form includes fields for: invite code with a note to request one at zeeguu.team@gmail.com, full name input, email address input, and password fields with a minimum 4-character requirement. At the bottom is a checkbox to agree to the Privacy Notice, followed by a prominent 'Create Account' button in orange. Below the form is a 'Log In' link for existing users.",
-          "description": " User Registration - Step 1: This step focuses on the account creation process. Input fields have a consistent visual style matching the dropdowns from step one, and include clearer instructions - such as the required password length."
+          "description": "User Registration - Step 2: This step focuses on\u00A0the\u00A0account creation process. Input fields have a\u00A0consistent visual style matching the\u00A0dropdowns from step one, and include clearer instructions - such as\u00A0the\u00A0required password\u00A0length."
         }
       ]
     }
@@ -68,19 +68,19 @@
           "id": 1,
           "imgSrc": "install-extension-old.png",
           "alt": "Zeeguu browser extension installation page on a white card with a cream background. The page is titled 'Welcome to Zeeguu' with a subtitle 'Time to install the Zeeguu Reader browser extension'. The content explains that users can access words, article recommendations, and exercises on zeeguu.org, but only for articles shared by teachers or saved via the extension. Three key features are listed: one-click translation and pronunciation, removal of excess clutter from articles, and generation of personalized vocabulary exercises. Two prominent buttons are displayed: 'Install for Chrome or Edge' and 'Install for Firefox'. At the bottom, there's a link stating 'Don't want the extension? Go to articles.",
-          "description": "User Onboarding - Step 1: Users were introduced to the platform's main features and prompted to install the browser extension, which enables key functionalities like translations and pronunciation. However, this step also appeared on mobile and unsupported browsers, which caused confusion. Additionally, the large amount of information contributed to cognitive overload."
+          "description": "User Onboarding - Step 1: Users were introduced to\u00A0the\u00A0platform's main features and\u00A0prompted to\u00A0install the\u00A0browser extension, which\u00A0enables key functionalities like translations\u00A0and pronunciation. However, this step also appeared on\u00A0mobile and\u00A0unsupported browsers, which caused confusion. Additionally, the\u00A0large amount of\u00A0information contributed to\u00A0cognitive\u00A0overload."
         },
         {
           "id": 2,
           "imgSrc": "extension-installed-old.png",
           "alt": "Zeeguu extension installation confirmation page with a white background. The page displays 'Extension is installed!' at the top, followed by a heading 'Pin it to the toolbar to make it easy to access'. Below is a link to 'Learn how it works by watching this video'. The main content shows a screenshot of Wikipedia's Chrome Web Store page with the Zeeguu extension icon visible in the browser's toolbar. At the bottom is an orange button labeled 'Go to article recommendations' which spans the full width of the content area.",
-          "description": "User Onboarding - Step 2: Confirmed the successful installation of the Zeeguu browser extension. An animation demonstrated how to activate the extension, but its busy visuals distracted from the core message."
+          "description": "User Onboarding - Step 2: Confirmed the\u00A0successful installation of\u00A0the\u00A0Zeeguu browser extension. An\u00A0animation demonstrated how to\u00A0activate the\u00A0extension, but its busy visuals distracted from the\u00A0core\u00A0message."
         },
         {
           "id": 3,
           "imgSrc": "empty-homepage-old.png",
           "alt": "Zeeguu empty homepage showing navigation and search interface. Top navigation displays 'Recommended | Saved' tabs, with 'Recommended' being active. Below are 'Interests' and 'Non-interests' filter buttons, followed by a search bar labeled 'Search all articles' with a magnifying glass icon. A 'Sort by:' dropdown offers 'Length' and 'Level' options. The main content area shows a message: 'We can not find articles in the language you want to study and for your current interests. Consider changing your interests. Alternatively read articles with the help of the Zeeguu browser extension. You can also add articles to My Texts through the Save article to Zeeguu.org button from within the extension.' The left sidebar contains navigation links for Home, Words, Exercises, History, Statistics, Teacher Site, Settings, and Logout, with an orange elephant logo at the top.",
-          "description": " The home screen appeared empty due to the lack of initial customization, which could give users the misleading impression that something was broken."
+          "description": "The\u00A0home screen appeared empty due to\u00A0the\u00A0lack of\u00A0initial customization, which could give users the\u00A0misleading impression that\u00A0something was\u00A0broken."
         }
       ]
     },
@@ -92,25 +92,25 @@
           "id": 1,
           "imgSrc": "select-interests.png",
           "alt": "Zeeguu interests selection page showing a white card on an orange background. At the top is an orange elephant logo followed by the heading 'What would you like to read about?' Below are seven topic buttons arranged in three rows: 'Business' and 'Culture & Art' in the first row, 'Politics', 'Sports', and 'Technology & Science' in the second row, and 'Travel & Tourism' in the third row. Some topics are outlined in grey while others have an orange fill, indicating selected state. At the bottom is reassuring text 'You can always change it later' followed by a prominent orange 'Next' button with an arrow icon.",
-          "description": "User Onboarding - Step 1: Hobby selection allows users to personalize the content they will see after creating an account"
+          "description": "User Onboarding - Step 1: Hobby selection allows users to\u00A0personalize the\u00A0content they will see after creating an\u00A0account"
         },
         {
           "id": 2,
           "imgSrc": "exclude-words.png",
           "alt": "Zeeguu word exclusion setup page showing a white card on an orange background. At the top is an orange elephant logo, followed by the heading 'Would you like to exclude articles and exercises containing particular words or phrases?' Below is a text input field with placeholder text 'E.g. robbery' and a plus button to its right. Helper text underneath reads 'Add one unwanted word or phrase at a time'. At the bottom of the card is reassuring text 'You can always change it later' and a prominent 'Next' button with an arrow icon.",
-          "description": "User Onboarding - Step 2: Keyword exclusion lets users hide content they may find triggering, helping create a safer and more personalized experience from the first use."
+          "description": "User Onboarding - Step 2: Keyword exclusion lets users hide content they may find triggering, helping create a\u00A0safer and more personalized experience from the\u00A0first\u00A0use."
         },
         {
           "id": 3,
           "imgSrc": "install-extension-new.png",
           "alt": "Zeeguu browser extension installation page showing a white card on an orange background. At the top is an orange elephant logo above the heading 'Read and translate foreign articles with the Zeeguu browser extension'. The center features an illustration demonstrating the extension's functionality, showing highlighted words 'artists', 'a museum', and 'or' with toggle switches for 'See translation' and 'Hear pronunciation'. Below, there's text explaining browser compatibility: 'The Chrome Web Store extension also works in Edge, Opera, Arc, Vivaldi, Brave and other Chromium based browsers.' At the bottom is a prominent 'Install from Chrome Web Store' button with an arrow icon, followed by an 'I will install it later' link.",
-          "description": "User Onboarding - Step 3 (desktop only): Users are introduced to and prompted to install the browser extension, which is essential for accessing key platform features such as translations and pronunciation. A button redirects them to the correct extension store based on their browser."
+          "description": "User Onboarding - Step 3 (desktop only): Users are introduced to\u00A0and prompted to\u00A0install the\u00A0browser extension, which is\u00A0essential for\u00A0accessing key platform features such as\u00A0translations and pronunciation. A\u00A0button redirects them to\u00A0the\u00A0correct extension store based on\u00A0their\u00A0browser."
         },
         {
           "id": 4,
           "imgSrc": "extension-installed-new.png",
           "alt": "Zeeguu extension installation success page showing a white card on an orange background. At the top is an orange elephant logo followed by the heading 'Right-click anywhere on any article's page to access the Zeeguu extension'. The center features an illustration demonstrating the right-click functionality, showing a webpage with a popup menu and cursor. Below the illustration, there's a prominent orange button labeled 'Go to Zeeguu' at the bottom of the card.",
-          "description": " User Onboarding - Step 4 (desktop only): Confirms the successful installation of the Zeeguu browser extension. Introduces users to activating the extension via right-click functionality."
+          "description": "User Onboarding - Step 4 (desktop only): Confirms the\u00A0successful installation of\u00A0the\u00A0Zeeguu browser extension. Introduces users to\u00A0activating the\u00A0extension via\u00A0right\u2011click\u00A0functionality."
         }
       ]
     }
@@ -125,7 +125,7 @@
           "id": 1,
           "imgSrc": "settings-old.png",
           "alt": "Zeeguu settings page with an orange sidebar. The main content area shows a settings form with the following fields: Name (input field), Email (input field), Learned Language (dropdown showing Danish), Level in Learned Language (dropdown), Native Language (dropdown showing Polish), and System Language (dropdown showing English). Below these fields is an orange 'Save' button. At the bottom is a section showing 'Your current class is: Zeeguu Betatesters' with a 'Change Class' option that includes an input field for a new invite code and an orange 'Change Class' button.",
-          "description": "Settings options were not grouped by theme, making navigation difficult. UI components appeared visually inconsistent and behaved unpredictably. The overall layout lacked scalability, making it challenging to add new options in the future."
+          "description": "Settings options were not grouped by theme, making navigation difficult. UI\u00A0components appeared visually inconsistent and behaved unpredictably. The overall layout lacked scalability, making it\u00A0challenging to\u00A0add new options in\u00A0the\u00A0future."
         }
       ]
     },
@@ -136,7 +136,7 @@
           "id": 1,
           "imgSrc": "settings-new.png",
           "alt": "Redesigned Zeeguu settings page with an orange sidebar containing navigation links. The main content area is organized into four sections: 'My Account' with 'Profile Details' and 'Language Settings' options, 'Reading Preferences' containing 'Interests' and 'Excluded Keywords' options, 'Exercises' with 'Exercise Type Preferences', and 'Account Management' with a 'Delete Account' option. Each option is presented as a clickable card with a right arrow icon, indicating they lead to detailed settings pages. The layout is clean and hierarchical, with clear section headings in gray text.",
-          "description": "Settings options are now grouped by theme, with each option placed on a separate screen. This reduces visual clutter and creates space for adding more options in the future."
+          "description": "Settings options are now grouped by theme, with each option placed on\u00A0a\u00A0separate screen. This reduces visual clutter and\u00A0creates space for\u00A0adding more options in\u00A0the\u00A0future."
         }
       ]
     }
