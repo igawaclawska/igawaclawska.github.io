@@ -67,8 +67,8 @@ picture,
 video,
 canvas,
 svg {
-  /* display: block;
-  max-width: 100%; */
+  display: block;
+  max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
