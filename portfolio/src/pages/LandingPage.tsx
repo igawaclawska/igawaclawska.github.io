@@ -49,9 +49,10 @@ const LandingPage = () => {
                 <span className={styles.highlightedText}>
                   &#32;frontend developer&#32;
                 </span>
-                specializing in JavaScript and React, with a&nbsp;background
-                in&nbsp;UX/UI design. My goal is to create digital solutions
-                that are accessible and inclusive for everyone, while also being
+                specializing in&nbsp;JavaScript and React, with
+                a&nbsp;background in&nbsp;UX/UI design.
+                My&nbsp;goal&nbsp;is&nbsp;to&nbsp;create digital solutions that
+                are accessible and inclusive for&nbsp;everyone, while also being
                 intuitive and high-performing.
               </p>
 
