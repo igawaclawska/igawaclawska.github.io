@@ -11,6 +11,7 @@ const Navbar = () => {
             Iga Waclawska
           </Link>
           <Link
+            isExternal={true}
             aria-label="Let's connect on LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
