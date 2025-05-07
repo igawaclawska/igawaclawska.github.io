@@ -1,15 +1,12 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
+import styles from "./Main.module.css";
 
 type Props = {
-    children: ReactNode | ReactNode[]; 
-  };
+  children: ReactNode | ReactNode[];
+};
 
-const Main = ({children} : Props) => {
-  return (
-    <main>
-      {children}
-    </main>
-  )
-}
+const Main = ({ children }: Props) => {
+  return <main className={styles.main}>{children}</main>;
+};
 
-export default Main
+export default Main;

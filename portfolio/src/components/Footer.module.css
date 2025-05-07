@@ -9,7 +9,34 @@
 .content {
   width: var(--max-width);
   max-width: var(--max-width);
+  gap: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.listOfLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  margin-right: auto;
+}
+
+@media (max-width: 576px) {
+  .content {
+    align-items: flex-start;
+  }
+  .listOfLinks {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
