@@ -47,13 +47,13 @@ const LandingPage = () => {
               <p className={styles.subheadline}>
                 I'm a Copenhagen-based
                 <span className={styles.highlightedText}>
-                  &#32;frontend developer&#32;
+                  &#32;software developer&#32;
                 </span>
-                specializing in&nbsp;JavaScript and React, with
-                a&nbsp;background in&nbsp;UX/UI design.
-                My&nbsp;goal&nbsp;is&nbsp;to&nbsp;create digital solutions that
-                are accessible and inclusive for&nbsp;everyone, while also being
-                intuitive and high-performing.
+                with a&nbsp;background in&nbsp;UX/UI design. I'm dedicated to
+                building accessible, intuitive, and high-performing digital
+                solutions. I work across web and mobile platforms using modern
+                tech stacks such as JavaScript, TypeScript, React, React Native,
+                and more.
               </p>
 
               <div>
