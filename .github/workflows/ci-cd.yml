@@ -3,11 +3,11 @@ name: CI/CD
 on:
   pull_request:
     branches:
-      - develop
+      - development
       - main
   push:
     branches:
-      - develop
+      - development
       - main
 
 permissions:
