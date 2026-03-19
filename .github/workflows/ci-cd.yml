@@ -4,68 +4,78 @@ on:
   workflow_dispatch:
   pull_request:
     branches:
-      - development
       - main
+      - development
   push:
     branches:
-      - development
       - main
+      - development
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    # The app is inside the "portfolio/" subfolder.
     defaults:
       run:
         working-directory: portfolio
 
+    permissions:
+      contents: read
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: Setup Node.js 20
-        uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
         with:
-          node-version: "20"
+          node-version: 24
           cache: npm
           cache-dependency-path: portfolio/package-lock.json
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint (if available)
+      - name: Lint
         run: npm run lint --if-present
 
       - name: Build app
         run: npm run build
 
-      # PRs get a preview artifact (no deployment).
-      - name: Upload preview build artifact
+      - name: Upload preview artifact
         if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
         with:
           name: preview-build
           path: portfolio/dist
 
-      # Only main branch pushes prepare Pages artifact for deployment.
-      - name: Upload GitHub Pages artifact
+      - name: Upload Pages artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: portfolio/dist
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
