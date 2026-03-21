@@ -20,7 +20,7 @@ const LandingPage = () => {
         sectionRef.current.getBoundingClientRect().top + window.scrollY;
 
       window.scrollTo({
-        top: elementPosition - 50,
+        top: elementPosition - 80,
         behavior: "smooth",
       });
 
@@ -33,7 +33,7 @@ const LandingPage = () => {
   };
   return (
     <>
-      <title>Iga Waclawska - Frontend Developer</title>
+      <title>Iga Waclawska - Software Developer</title>
       <Header>
         <Navbar />
       </Header>
