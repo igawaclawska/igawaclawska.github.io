@@ -1,19 +1,15 @@
 name: CI/CD
 
 on:
-  # workflow_dispatch:
-  # pull_request:
-  #   branches:
-  #     - main
-  #     - development
-  # push:
-  #   branches:
-  #     - main
-  #     - development
-  push:
-    branches: [main, development]
+  workflow_dispatch:
   pull_request:
-    branches: [main, development]
+    branches:
+      - main
+      - development
+  push:
+    branches:
+      - main
+      - development
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -29,19 +25,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: portfolio
-
     permissions:
       contents: read
 
     steps:
-      - name: Checkout repository
+      - name: Checkout main for production build
         uses: actions/checkout@v6
+        with:
+          ref: main
+          path: repo-main
+
+      - name: Checkout development for staging build
+        uses: actions/checkout@v6
+        with:
+          ref: development
+          path: repo-development
 
       - name: Setup Pages
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
       - name: Setup Node.js
@@ -49,33 +50,49 @@ jobs:
         with:
           node-version: 24
           cache: npm
-          cache-dependency-path: portfolio/package-lock.json
+          cache-dependency-path: |
+            repo-main/portfolio/package-lock.json
+            repo-development/portfolio/package-lock.json
 
-      - name: Install dependencies
+      - name: Install production dependencies
+        working-directory: repo-main/portfolio
         run: npm ci
 
-      - name: Lint
+      - name: Lint production app
+        working-directory: repo-main/portfolio
         run: npm run lint --if-present
 
-      - name: Build app
+      - name: Build production app from main
+        working-directory: repo-main/portfolio
         run: npm run build
 
-      - name: Upload preview artifact
-        if: github.event_name == 'pull_request'
-        uses: actions/upload-artifact@v7
-        with:
-          name: preview-build
-          path: portfolio/dist
+      - name: Install staging dependencies
+        working-directory: repo-development/portfolio
+        run: npm ci
+
+      - name: Lint staging app
+        working-directory: repo-development/portfolio
+        run: npm run lint --if-present
+
+      - name: Build staging app from development
+        working-directory: repo-development/portfolio
+        run: npm run build -- --mode staging
+
+      - name: Combine production root and staging path
+        run: |
+          mkdir -p final-dist/staging
+          cp -R repo-main/portfolio/dist/. final-dist/
+          cp -R repo-development/portfolio/dist/. final-dist/staging/
 
       - name: Upload Pages artifact
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
         with:
-          path: portfolio/dist
+          path: final-dist
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
 
     permissions:
